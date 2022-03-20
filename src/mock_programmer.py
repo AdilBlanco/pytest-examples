@@ -18,6 +18,10 @@ class Programmer:
         return random.choice(self.tech_names)
 
 
+    def display_random_tech(self):
+        return f'Technology name: {self.get_random_tech()}'
+
+
 programmer = Programmer().add_tech('python') \
     .add_tech('java') \
     .add_tech('sql') \
