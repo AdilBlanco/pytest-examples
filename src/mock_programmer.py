@@ -48,11 +48,7 @@ with patch('random.choice') as mock_random:
 
 # how to mock
 
-
 @patch('random.choice')
 def test_get_random_tech(mock_random):
     mock_random.return_value = 'sql'
     return programmer.get_random_tech()
-
-
-print(test_get_random_tech())
